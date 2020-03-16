@@ -12,12 +12,15 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli) #ticket number fucntion, each time customer enters number goes up
-  #for each new customer; add to array and puts "" returns number in line
+def take_a_number(katz_deli)
   ticket_number = katz_deli.length
   if ticket_number > 0
     katz_deli.push(ticket_number)
     puts "Welcome. You are number #{katz_deli.length} in line."
+  else
+    ticket_number = 1
+    katz_deli.push(ticket_number)
+    puts "Welcome. You are number one in line."
   end
 end
 
