@@ -12,16 +12,19 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli) #ticket number fucntion, each time customer enters number goes up
+  #for each new customer; add to array and puts "" returns number in line
+  if #lenght of array == ticket_number
+    ticket_number = katz_deli.length
+    katz_deli.push(ticket_number)
+    puts "Welcome. You are number #{katz_deli.length} in line."
 end
 
 def now_serving(katz_deli)
   if katz_deli != []
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
-  else 
+  else
     puts "There is nobody waiting to be served!"
   end
 end
