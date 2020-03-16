@@ -14,10 +14,12 @@ end
 
 def take_a_number(katz_deli) #ticket number fucntion, each time customer enters number goes up
   #for each new customer; add to array and puts "" returns number in line
-  if #lenght of array == ticket_number
+  ticket_number = katz_deli.length 
+  if katz_deli.length > ticket_number
+    puts "Welcome. You are number #{katz_deli.length} in line."
     ticket_number = katz_deli.length
     katz_deli.push(ticket_number)
-    puts "Welcome. You are number #{katz_deli.length} in line."
+    ticket_number += 1
 end
 
 def now_serving(katz_deli)
