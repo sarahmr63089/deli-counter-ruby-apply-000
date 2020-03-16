@@ -12,10 +12,10 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli)
+def take_a_number(katz_deli) #setting a global variable $counter = 0; #do as much pre-work as possible prior to bootcamp (not the day before)
   ticket_number = katz_deli.length
   if ticket_number > 0
-    katz_deli.push(ticket_number)
+    katz_deli.push(ticket_number + 1)
     puts "Welcome. You are number #{katz_deli.length} in line."
   else
     ticket_number = 1
